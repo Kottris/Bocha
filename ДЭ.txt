@@ -1,0 +1,19 @@
+Для загрузки базы
+git clone https://github.com/Carapter/DemoApp
+cd DemoApp
+rm -frd .git
+
+СОЗДАНИЕ ПАПКИ И РАЗРЕШЕНИЕ СОХРАНЕНИЯ БАЗЫ
+sudo mkdir /db
+sudo chown reddatabase /db
+
+СОЗДАНИЕ БАЗЫ ДАННЫХ
+Создать базу данных >
+Имя подключения: DemoConnection
+Файл базы данных: /db/demo.fdb
+Имя пользователя: sysdba
+Пароль: пароль администратора
+Create > Connect
+
+ER-МОДЕЛЬ
+Инструменты > Редактор ER-модели > Реверс инженеринг > Все таблицы > Создать
